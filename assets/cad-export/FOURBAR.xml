@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="mfussi" on="12/24/21||10:33:58" using="Simscape Multibody Link Version 6.0" from="Pro/Engineer Creo 7.0 - 2021184"/>
+<ModelUnits mass="kg" length="mm"/>
+<RootAssembly name="FOURBAR" uid="FOURBAR_asm" version="325">
+<AssemblyFile name="FOURBAR.asm" type="ProEngineer Assembly"/>
+<InstanceTree>
+<Instance name="BASE" grounded="true" uid="59" entityUid="BASE_prt">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="ROCKER" uid="60" entityUid="ROCKER_prt">
+<Transform>
+<Rotation>1 0 0 0 -0.81197579537456555 -0.58369110643031175 0 0.58369110643031175 -0.81197579537456555</Rotation>
+<Translation>12 -137.35498058407325 39.254442737404162</Translation>
+</Transform>
+</Instance>
+<Instance name="ARM" uid="61" entityUid="ARM_prt">
+<Transform>
+<Rotation>1 0 0 0 0.97888236502877746 -0.20442435137641327 0 0.20442435137641324 0.97888236502877746</Rotation>
+<Translation>24.000000000000011 -68.377372743468186 55.718049326228659</Translation>
+</Transform>
+</Instance>
+<Instance name="FOLLOWER" uid="63" entityUid="FOLLOWER_prt">
+<Transform>
+<Rotation>1 0 0 0 0.77451722026514558 0.63255282428643989 0 -0.63255282428643989 0.77451722026514558</Rotation>
+<Translation>12 65.938332892653975 40.658962814004653</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric_60_0">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>59</Uid>
+</InstancePath>
+<Position>0 -120 12</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>60</Uid>
+</InstancePath>
+<Position>0 -29.999999999999996 12</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident_60_1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>59</Uid>
+</InstancePath>
+<Position>12 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>60</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident_61_0">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>60</Uid>
+</InstancePath>
+<Position>12 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>61</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric_61_1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>60</Uid>
+</InstancePath>
+<Position>0 29.999999999999996 12</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>61</Uid>
+</InstancePath>
+<Position>0 -100 11.999247935053059</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident_63_0">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>59</Uid>
+</InstancePath>
+<Position>12 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>63</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric_63_1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>59</Uid>
+</InstancePath>
+<Position>0 120 12</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>63</Uid>
+</InstancePath>
+<Position>0 60 12</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric_63_2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>61</Uid>
+</InstancePath>
+<Position>0 100 11.999247935053059</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>63</Uid>
+</InstancePath>
+<Position>0 -60 12</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident_63_3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>61</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>63</Uid>
+</InstancePath>
+<Position>12 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="ARM" uid="ARM_prt" version="424">
+<PartFile name="ARM.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.16886812928974476</Mass>
+<CenterOfMass>6 0 11.999247935053059</CenterOfMass>
+<Inertia>637.72609068864108 10.245133007102513 631.53379277189185 0.00035428362937178461 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="arm_prt.step" type="STEP"/>
+</Part>
+<Part name="BASE" uid="BASE_prt" version="450">
+<PartFile name="BASE.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.2011361425075493</Mass>
+<CenterOfMass>6 0 12</CenterOfMass>
+<Inertia>1067.2418188264703 12.182241721286045 1059.886844510198 0.00046929484796285394 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="base_prt.step" type="STEP"/>
+</Part>
+<Part name="FOLLOWER" uid="FOLLOWER_prt" version="467">
+<PartFile name="FOLLOWER.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.1043681417294741</Mass>
+<CenterOfMass>6 0 12</CenterOfMass>
+<Inertia>158.37436243950978 6.3761258311955462 154.50307200227471 0.00016890134565469343 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="follower_prt.step" type="STEP"/>
+</Part>
+<Part name="ROCKER" uid="ROCKER_prt" version="443">
+<PartFile name="ROCKER.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.055984141338891347</Mass>
+<CenterOfMass>6 0 12</CenterOfMass>
+<Inertia>29.280251768880831 3.4730678778150934 27.150803279432818 6.8765060230391092e-005 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="rocker_prt.step" type="STEP"/>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
