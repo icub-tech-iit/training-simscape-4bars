@@ -1,7 +1,4 @@
 %% Data initialization script
-% To generate the Simscape multibody model of the four-bar linkage
-% launch the script then type in the command window:
-%   smimport('assets/cad-export/FOURBAR.xml')
 
 addpath(genpath('assets'));
 
@@ -18,3 +15,9 @@ bm = 1.3e-5; % damping mNm/rpm
 Jm = 0.65; % inertia gcm2
 Tload = 0.01; % load torque Nm
 eta = 100; % gearbox transmission ratio
+
+
+% To generate the Simscape multibody model of the four-bar linkage
+% launch the script then type in the command window:
+
+% smimport('assets/cad-export/FOURBAR.xml')
