@@ -23,3 +23,4 @@ The training covers the following concepts:
 6. Add a simple PI control to move the motor to a desired speed
 7. Replace the constant load with the inertia of a 3D multibody model
 8. Import the four-bar linkage in the model and control the follower angle
+9. Add a Multibody belt transmission to the linkage crank
