@@ -1,7 +1,5 @@
 %% Data initialization script
 
-addpath(genpath('assets'));
-
 % Electrical parameters
 R = 19.8; % armature resistance ohm
 L = 250; % rotor inductance uH
